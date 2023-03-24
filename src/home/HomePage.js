@@ -51,8 +51,7 @@ function Homepage() {
       <CircularProgress />
     </Box>
   )
-  } else if (status === 'failed') {
-    return <div>Error: {error}</div>
+
   } else {
     return (
       <div>
