@@ -13,7 +13,6 @@ function Homepage() {
   const dispatch = useDispatch()
   const students = useSelector(state => state.students.students)
   const status = useSelector(state => state.students.status)
-  const error = useSelector(state => state.students.error)
 
   useEffect(() => {
     dispatch(fetchStudents())
