@@ -10,7 +10,7 @@ const initialState = {
 export const fetchStudents = createAsyncThunk(
   'students/fetchStudents',
   async () => {
-    const response = await axios.get('http://universities.hipolabs.com/search?name=middle');
+    const response = await axios.get('https://api.openbrewerydb.org/breweries');
     return response.data;
   }
 );
